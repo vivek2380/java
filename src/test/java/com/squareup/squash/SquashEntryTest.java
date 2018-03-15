@@ -38,7 +38,7 @@ public class SquashEntryTest {
     assertThat(deserialized.parent_exceptions).isEmpty();
     assertThat(deserialized.class_name).isNull();
   }
-
+//This is the new code
   private SquashEntry serializeAndDeserialize(SquashEntry logEntry) throws IOException {
     return gson.fromJson(gson.toJson(logEntry), SquashEntry.class);
   }
